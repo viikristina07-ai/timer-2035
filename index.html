@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt; &lt;html lang="ru"&gt; &lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;title&gt;Отсчет до 2035 года&lt;/title&gt; &lt;style&gt; body { margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: #0f172a; color: #f8fafc; font-family: system-ui, sans-serif; text-align: center; } .timer { display: flex; gap: 20px; font-size: 2.5rem; font-weight: bold; margin-top: 20px; } .block span { display: block; font-size: 0.9rem; font-weight: normal; color: #94a3b8; } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;До 2035 года осталось:&lt;/h1&gt; &lt;div class="timer" id="timer"&gt;Загрузка...&lt;/div&gt; &lt;script&gt; const targetDate = new Date("2035-01-01T00:00:00").getTime(); function updateTimer() { const now = new Date().getTime(); const diff = targetDate - now; if (diff &lt;= 0) { document.getElementById("timer").innerHTML = "2035 год наступил!"; return; } const days = Math.floor(diff / (1000 * 60 * 60 * 24)); const hours = Math.floor((diff / (1000 * 60 * 60)) % 24); const minutes = Math.floor((diff / (1000 * 60)) % 60); const seconds = Math.floor((diff / 1000) % 60); document.getElementById("timer").innerHTML = ` &lt;div class="block"&gt;${days}&lt;span&gt;дней&lt;/span&gt;&lt;/div&gt; &lt;div class="block"&gt;${hours}&lt;span&gt;часов&lt;/span&gt;&lt;/div&gt; &lt;div class="block"&gt;${minutes}&lt;span&gt;минут&lt;/span&gt;&lt;/div&gt; &lt;div class="block"&gt;${seconds}&lt;span&gt;секунд&lt;/span&gt;&lt;/div&gt; `; } updateTimer(); setInterval(updateTimer, 1000); &lt;/script&gt; &lt;/body&gt; &lt;/html&gt;</span></p>
+</body>
+</html>
